@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './hexagon.module.css'
+import busSelfie from '../images/bus-station.jpg'
+import diploma from '../images/electrical_egineer_diploma.jpg'
 
 const Hexagon = () => (
   <div className={styles.hex_container}>
@@ -19,12 +21,24 @@ const Hexagon = () => (
     <div className={styles.hex_bottom_row}>
       <div className={styles.hexagon}>
         <div className={styles.hexagon_in1}>
-          <div className={styles.hexagon_in2} />
+          <div
+            className={styles.hexagon_in2}
+            style={{
+              'background-image': `url(${busSelfie})`,
+              'background-position-y': '60%',
+            }}
+          />
         </div>
       </div>
       <div className={styles.hexagon}>
         <div className={styles.hexagon_in1}>
-          <div className={styles.hexagon_in2} />
+          <div
+            className={styles.hexagon_in2}
+            style={{
+              'background-image': `url(${diploma})`,
+              'background-position-y': 'top',
+            }}
+          />
         </div>
       </div>
     </div>

@@ -21,6 +21,10 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            'align-items': 'cneter',
             margin: '0 auto',
             maxWidth: 960,
             padding: '0px 1.0875rem 1.45rem',

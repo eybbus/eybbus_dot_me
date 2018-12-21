@@ -1,15 +1,15 @@
 .hex_container {
-  float: right;
-  width: 900px;
   display: flex;
   flex-direction: column;
 }
 
 .hexagon {
-  height: 500px;
-  width: 400px;
+  height: 350px;
+  width: 300px;
+  margin: 0 20px;
   overflow: hidden;
   visibility: hidden;
+
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
   -ms-transform: rotate(120deg);
@@ -29,8 +29,9 @@
 .hexagon_in2 {
   width: 100%;
   height: 100%;
-  background-position: 50%;
   background-size: cover;
+  background-position: center 30%;
+
   visibility: visible;
   -webkit-transform: rotate(-60deg);
   -moz-transform: rotate(-60deg);
@@ -42,10 +43,10 @@
 .hex_top_row {
   display: flex;
   justify-content: center;
-  margin-bottom: -125px;
+  margin-bottom: -50px;
 }
 
 .hex_bottom_row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
